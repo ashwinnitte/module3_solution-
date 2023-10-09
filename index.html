@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC - Our Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    /* Custom CSS for your page */
+
+/* Background color for the tall section */
+.tall-section {
+    background-color: #f5f5f5;
+}
+
+/* Additional styling can be added here */
+
+/* Center text within the page heading */
+.text-center {
+    text-align: center;
+}
+
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+}
+h1 {
+     text-align:center;
+     }
+h2 {
+    font-size: 150%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 991px) {
+    .section {
+        width: 48%;
+    }
+
+    .section:nth-child(3) {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
+
+    
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Food, LLC</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-menu">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Chicken</a></li>
+                <li><a href="#">Beef</a></li>
+                <li><a href="#">Sushi</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Heading -->
+<div class="container text-center">
+    <h1>Our Menu</h1>
+</div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Chicken</h2>
+            <p>The chicken is a domesticated species that arose from the red junglefowl, originally from India. They have also partially hybridized with other wild species of junglefowl. Rooster and cock are terms for adult male birds, and a younger male may be called a cockerel. A male that has been castrated is a capon</p>
+        </section>
+        <section class="section">
+            <h2>Beef</h2>
+            <p>Beef is the culinary name for meat from cattle (Bos taurus).
+
+In prehistoric times, humankind hunted aurochs and later domesticated them. Since that time, numerous breeds of cattle have been bred specifically for the quality or quantity of their meat. Today, beef is the third most widely consumed meat in the world, after pork and poultry. As of 2018, the United States, Brazil, and China were the largest producers of beef.</p>
+        </section>
+        <section class="section">
+            <h2>Sushi</h2>
+            <p>Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood—often raw—and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.</p>
+        </section>
+    </div>
+<!-- Tall Section -->
+<section class="container-fluid tall-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- Your content here using Bootstrap grid -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include Bootstrap JS and jQuery (for responsive functionality) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+    
